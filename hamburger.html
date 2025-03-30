@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Figma mirror</title>
+</head>
+
+<body>
+    <header>
+        <h1>C2411L</h1>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="menu">
+            <div class="navbar">
+                <a href="#">Products</a>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="auth">
+                <a href="#">Sign In</a>
+                <a href="#" class="button">Start free trial</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="container">
+        <div class="content">
+
+            <h1>A special credit card made for Developers.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.</p>
+
+            <div class="email-form">
+                <input type="email" placeholder="Enter email address">
+                <button>Get Free Card</button>
+            </div>
+
+            <div class="number--rate">
+                <div class="number--rate-container">
+                    <h2>2943</h2>
+                    <p class="Cards--delivered">Cards Delivered</p>
+                </div>
+
+                <div class="number--rate-container">
+                    <h2>$1M+</h2>
+                    <p class="Cards--delivered">Transaction Completed</p>
+                </div>
+            </div>
+
+        </div>
+        <img src="./image--container.jpg" alt="Credit Card Image" class="img">
+        </div>
+    </section>
+
+    <section class="production">
+        <div class="production--list">
+            <div class="production--item">
+                <img src="./image--production.jpg" alt="Credit Card Image">
+                <h3>4 Series — Intelligent Flight Battery</h3>
+                <p>$186</p>
+            </div>
+
+            <div class="production--item">
+                <img src="./image--production.jpg" alt="Credit Card Image">
+                <h3>4 Series — Intelligent Flight Battery</h3>
+                <p>$186</p>
+            </div>
+
+            <div class="production--item">
+                <img src="./image--production.jpg" alt="Credit Card Image">
+                <h3>4 Series — Intelligent Flight Battery</h3>
+                <p>$186</p>
+            </div>
+
+            <div class="production--item">
+                <img src="./image--production.jpg" alt="Credit Card Image">
+                <h3>4 Series — Intelligent Flight Battery</h3>
+                <p>$186</p>
+            </div>
+
+
+            <div class="production--item">
+                <img src="./image--production.jpg" alt="Credit Card Image">
+                <h3>4 Series — Intelligent Flight Battery</h3>
+                <p>$186</p>
+            </div>
+
+
+            <div class="production--item">
+                <img src="./image--production.jpg" alt="Credit Card Image">
+                <h3>4 Series — Intelligent Flight Battery</h3>
+                <p>$186</p>
+            </div>
+
+
+            <div class="production--item">
+                <img src="./image--production.jpg" alt="Credit Card Image">
+                <h3>4 Series — Intelligent Flight Battery</h3>
+                <p>$186</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="Platform">
+            <h2>Platform</h2>
+            <a href="#">Studio</a>
+            <a href="#">Closet</a>
+            <a href="#">Discover</a>
+            <a href="#">Market</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contacts</a>
+        </div>
+
+        <div class="contact">
+            <h2>Ready for action</h2>
+            <h1>hello@defy.io</h1>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const menu = document.querySelector('.menu');
+        const section = document.querySelectorAll('.section');
+        const footer = document.querySelector('footer');
+
+        menuIcon.addEventListener('click', function () {
+            menu.classList.toggle('active');
+
+            if(menu.style.display === 'none') {
+                section.forEach(section => section.style.display = 'none');
+                footer.style.display = 'none';
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
